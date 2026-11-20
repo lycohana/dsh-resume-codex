@@ -1,0 +1,55 @@
+{
+  "name": "dsh-resume-codex",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Continue a Codex session in DSH: import the Codex transcript, its compaction summary, and its working directory.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "lycohana",
+  "homepage": "https://github.com/lycohana/dsh-resume-codex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lycohana/dsh-resume-codex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lycohana/dsh-resume-codex/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "codex",
+    "session-import",
+    "workspace"
+  ]
+}

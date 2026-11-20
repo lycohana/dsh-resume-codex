@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Continue from Codex",
+    "description": "Adds a Continue from Codex option to the New Session row. Pick a local Codex session and DSH imports its transcript, its compaction summary and its working directory as a new Session you keep talking in. Codex files are only read; nothing is sent to Codex.",
+    "detail": "docs/DETAIL.md"
+  }
+}

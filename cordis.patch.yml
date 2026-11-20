@@ -1,0 +1,5 @@
+# The "Continue from Codex" option in the New Session row plus its two
+# owner-only routes. The repository root is the plugin package.
+- insert:
+    - id: resume-codex
+      name: 'dsh-resume-codex'

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "从 Codex 继续",
+    "description": "在新建会话页增加「从 Codex 继续」入口：选择一个本机 Codex 会话，DSH 会把它的对话记录、压缩摘要和工作目录导入为一个新会话，随后可以直接接着聊。只读取 Codex 文件，不会向 Codex 发送任何内容。",
+    "detail": "docs/DETAIL.md"
+  }
+}
