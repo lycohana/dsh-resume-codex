@@ -292,6 +292,15 @@ plugin_manager action=install_bundle target="D:\\desktop\\code\\resume_codex\\sr
 
 **验证方式**：用临时 token 路由取到带凭证的 GUI URL，在隔离的 Chrome 配置里打开同一 DSH Web GUI，实际点击「新会话 → 从 Codex 继续」，检查按钮、弹窗、选中态与禁用态；再选一条 91 KB 会话完成真实导入，确认自动打开新会话、AI-_- 工作区出现且历史完整。验证产生的会话、工作区成员、注册表记录与临时探针均已清理，只保留用户自己导入的「阅读项目」会话。界面截图见 `hero.png` 与 `dialog.png`。
 
+## 13. 发布（2026-11-21）
+
+- 仓库：<https://github.com/lycohana/dsh-resume-codex>（public，main + tag `v0.1.0`）
+- Release：<https://github.com/lycohana/dsh-resume-codex/releases/tag/v0.1.0>，附带 `dsh-resume-codex-0.1.0.tgz`
+- 安装规格：`github:lycohana/dsh-resume-codex#v0.1.0`，已在本机通过 `plugin_manager install_bundle` 实测安装并激活（profile 依赖记录为 git spec）。
+- 仓库根目录即插件包（DSH 要求），开发记录与截图放在 `dev/`，不进入 npm/`files` 打包。
+- Git 规格按标签安装后不会出现在插件页的版本更新列表；升级需重新安装新标签。
+
+
 
 ## 附：参考资料（已清理）
 

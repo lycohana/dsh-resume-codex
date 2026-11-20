@@ -34,11 +34,13 @@ plugin_manager install_bundle target="github:lycohana/dsh-resume-codex#v0.1.0"
 
 ### 方式二：插件页添加
 
-在 **插件 → 添加插件** 中粘贴 Git 规格：
+在 **插件 → 添加插件** 中粘贴 Git 规格（与上面命令使用同一个安装器）：
 
 ```text
 github:lycohana/dsh-resume-codex#v0.1.0
 ```
+
+如果当前版本的添加框只接受本地目录或包名，请使用方式一或方式三。
 
 ### 方式三：Release 压缩包
 
