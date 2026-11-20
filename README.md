@@ -14,7 +14,7 @@ Codex 文件只读，不会修改，也不会向 Codex 发送任何内容，不�
 - 扫描 `$CODEX_HOME`（默认 `~/.codex`）下 `sessions/` 与 `archived_sessions/` 的 rollout。
 - 支持搜索、只看当前目录、已导入标记。
 - 导入范围：智能 30 轮 / 最近 50 轮 / 全部对话；可选包含工具调用。
-- 智能模式使用最近一次 Codex `compacted` 摘要作为压缩前上下文。
+- 智能模式使用最近一次**可读**的 Codex `compacted` 摘要作为压缩前上下文；OpenAI 加密格式的摘要会被跳过，并回退到更早一份可读摘要，不会解码成乱码。
 - 自动复用或在 Codex 原目录新建工作区，导入后直接打开新会话。
 - 过滤 Codex 注入的 fork 边界、`<environment_context>`、`<user_instructions>` 等伪用户消息。
 
